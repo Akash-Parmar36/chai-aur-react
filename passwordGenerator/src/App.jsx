@@ -59,10 +59,6 @@ function App() {
                         <label htmlFor="character" className='text-orange-600'>Characters</label>
                  
              </div>
-             {/* <div>
-                 <p>Number : {number.toString()}</p>
-                 <p>Character : {character.toString()}</p>
-             </div> */}
          </div>
     </>
   )
