@@ -3,7 +3,13 @@ import {createSlice , nanoid} from '@reduxjs/toolkit'
 //for getting data from Local Storage
 const loadTodosFromLocalStorage = () => {
       const serializedTodos = localStorage.getItem("todos");
-      return serializedTodos ? JSON.parse(serializedTodos) : [{id : 1 , text : "Hello World"}];
+    //   console.log(serializedTodos)
+    //   console.log(typeof(serializedTodos))
+    //   console.log(serializedTodos.length)
+    //   console.log(JSON.parse(serializedTodos))
+    //   console.log(typeof(JSON.parse(serializedTodos)))
+    //   console.log(JSON.parse(serializedTodos).length)
+      return JSON.parse(serializedTodos).length != 0 ? JSON.parse(serializedTodos) : [{id : 1 , text : "Hello World"}];
 };
 
 const initialState = {
